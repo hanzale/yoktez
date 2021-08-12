@@ -1,0 +1,12 @@
+name: yok
+channels:
+  - conda-forge
+  - robostack
+  - defaults
+dependencies:
+  - numpy
+  - pandas
+  - plotly
+  - streamlit
+  - chart-studio
+prefix: /home/sophophobia/miniconda3/envs/yok
