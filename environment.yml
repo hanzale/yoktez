@@ -1,10 +1,11 @@
-name: yok
+name: yoktez
 channels:
-  - plotly
   - conda-forge
+  - robostack
   - defaults
 dependencies:
   - numpy
   - pandas
   - plotly
   - streamlit
+  - chart-studio
