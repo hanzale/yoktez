@@ -90,7 +90,6 @@ def express(secim='din'):
     #fig = go.Figure(layout= go.Layout(autosize=False, width=800, height=800) ) # sizes["4"], marker_sizemode= 'area' #calismazsa burayı ac
     fig = go.FigureWidget( ) 
     
-    fig.layout  
     fig.add_trace(go.Scatterpolar(r= (0,0) , mode= 'markers', marker_size= secim_cap , marker_symbol='octagon-dot' ,hoverinfo= 'name + text', text = "Tez Sayısı: {}".format(int(secim_size)) , name= secim, marker_sizemode= 'area', showlegend = False   ))
 
     for i in mesafe_grup:
