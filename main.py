@@ -1,6 +1,7 @@
 
 import streamlit as st
-import numpy as np  
+import numpy as np
+from numpy import log  
 import pandas as pd
 import plotly.graph_objs as go
 import base64
@@ -69,9 +70,7 @@ def plotter(secilen_kelime = "din"):
         
         #radius length
         swap8 = []
-        for j in range(len(ids[i])):
-            swap8.append( 1 - ( 1 / (mesafe_grup[-1] - (int(i))) )  )
-             
+        swap8.append(secim_cap + int(i) )
             #hover_text.append( tags[i][j] + '\n' + str(sizes[i][j]) )
             
         distances['%s' %i] = swap8
@@ -101,7 +100,7 @@ def express(secim='din'):
     #fig.layout.paper_bgcolor = '#000000'
     #fig.layout.polar.radialaxis.showgrid = False
     fig.layout.polar.radialaxis.visible = False
-    fig.update_layout(template = "seaborn", xaxis_showgrid=False, yaxis_showgrid=False, margin=go.layout.Margin(l=0,r=0, b=0, t=0), title=secim, paper_bgcolor="rgba(0,0,0,0)" ) # paper_bgcolor=' #0000b3 # templates=["ggplot2", "saborn", "plotly", plotly_dark ]
+    fig.update_layout(template = "plotly", xaxis_showgrid=False, yaxis_showgrid=False, margin=go.layout.Margin(l=0,r=0, b=0, t=0), title=secim, paper_bgcolor="rgba(0,0,0,0)" ) # paper_bgcolor=' #0000b3 # templates=["ggplot2", "saborn", "plotly", plotly_dark ]
     
 
     return fig
@@ -113,7 +112,7 @@ def callback(trace, points, selector):
  
 
 st.set_page_config(page_icon="./icon2.png", page_title="YOKTEZ Bağlam Haritası")
-set_bg("../media/bg.jpg")
+set_bg("./media/bg.jpg")
 st.markdown("___ ")
 
 
