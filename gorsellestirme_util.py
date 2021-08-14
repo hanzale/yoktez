@@ -6,11 +6,11 @@ import base64
 
 def matrix_reader( alan = "din" ):
     assert alan in ["din", "felsefe"]
-    co_occurrence_matrix = np.load("../database/%s_dizin_matrix.npy"%alan )
-    with open("../database/%s_dizin_kelimeler.pickle"%alan , "rb") as f:
+    co_occurrence_matrix = np.load("./database/%s_dizin_matrix.npy"%alan )
+    with open("./database/%s_dizin_kelimeler.pickle"%alan , "rb") as f:
         dizin_kelimeler = pickle.load(f)
     
-    with open("../database/%s_duzenli_dataframe.pickle"%alan , "rb") as f:
+    with open("/database/%s_duzenli_dataframe.pickle"%alan , "rb") as f:
         df = pd.read_pickle(f)
     
     return co_occurrence_matrix, dizin_kelimeler, df
