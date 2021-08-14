@@ -4,10 +4,10 @@ channels:
   - robostack
   - defaults
 dependencies:
+  - numpy=1.20
   - pandas
   - plotly
   - streamlit
   - chart-studio
   - backports.zoneinfo
-pip:
-  - numpy
+  
