@@ -52,7 +52,7 @@ def plotter(secilen_kelime = "din"):
         swap10 = 360 / len(ids[i]) 
         
         #swap6 = np.arange(0, 360, swap10) #dairede eş aralıklı dağılım
-        swap6 = np.random.random_integers(0,360, len( ids[i] ) ) #rastgele dağılım
+        swap6 = np.random.randint(0, 360 + 1, len( ids[i] ) )  #rastgele dağılım
         
         radials['%s' %int(i)] = swap6
         
