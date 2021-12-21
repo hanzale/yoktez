@@ -3,12 +3,6 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - chart-studio=1.1.0=py_0
-  - dash=0.39.0=py_0
-  - dash-core-components=0.44.0=py_0
-  - dash-html-components=0.14.0=py_0
-  - dash-renderer=0.20.0=py_0
-  - dash-table=3.6.0=py_0
   - numpy=1.21.1=py39hdbf815f_0
   - pandas=1.3.0=py39hde0f152_0
   - plotly=5.1.0=py_0
